@@ -1,10 +1,11 @@
 import { Outlet } from "react-router-dom";
+import { HeaderComponent } from "../components/Header";
 
 export default function AppLayout() {
   return (
     <section>
-        <h1>Lorem Ipsum</h1>
-        <Outlet />
+      <HeaderComponent />
+      <Outlet />
     </section>
   )
 }
