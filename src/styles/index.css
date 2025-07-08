@@ -31,6 +31,19 @@ body {
         overflow-x-hidden
         overflow-y-auto
         p-8
+        relative
     ;
+
+    &::after {
+        content: "";
+        background-image: url("../assets/images/canvas.png");
+        @apply
+            w-full
+            h-full
+            absolute
+            top-0
+            start-0
+        ;
+    }
 
 }
