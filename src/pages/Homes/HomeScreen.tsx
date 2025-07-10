@@ -1,33 +1,27 @@
-import HeroPersonImage from "../../assets/images/_hero_person.png";
-import { Button } from "../../components/Buttons/Button";
+import { HomeHero } from "./HomeHero";
+import { HomeMenu } from "./HomeMenu";
+import Menu1 from "../../assets/images/menus/menu_bistik.png";
+import Menu2 from "../../assets/images/menus/menu_dimsum.png";
+import Menu3 from "../../assets/images/menus/menu_chili.png";
+import Menu4 from "../../assets/images/menus/menu_dimsum_2.png";
+import Menu5 from "../../assets/images/menus/menu_dimsum_3.png";
+import Menu6 from "../../assets/images/menus/menu_dimsum_4.png";
 
 export default function HomeScreen() {
   return (
     <>
-      <section className='grid grid-cols-5 items-center'>
-        <div className='col-span-2'>
-          <div className='flex flex-col text-end py-8'>
-            <h2 className='font-extrabold italic text-5xl'>RASA AUTHENTIKNYA</h2>
-            <h5 className='text-xl'>Biking Melayang!</h5>
-          </div>
-          <div className='flex gap-4 flex-wrap'>
-            <Button color="primary" size="lg" className="rounded-full! font-semibold" children="LIHAT MENU" />
-            <Button color="secondary" size="lg" variant="ghost" className="rounded-full! font-semibold" children="Info Selengkapnya" />
-          </div>
-        </div>
-        <div className='col-span-3 flex items-center justify-center'>
-          <img src={HeroPersonImage} width={750} className='object-contain aspect-auto' alt="hero_person" draggable={false} />
-        </div>
-      </section>
+      <HomeHero />
       <div className="my-8">&nbsp;</div>
-      <section className="py-4 text-center w-3/4 mx-auto">
-        <h4 className="text-2xl text-secondary-500 font-bold italic mb-4">PESEN JUGA MENU TERBARU KITA YUK!</h4>
-        <ul className="flex gap-4 items-center border-t-[.75rem] border-t-white px-12">
-          <li className="p-8 h-52 flex-1 border-white border-8 border-t-0 rounded-b-[4rem]">Menu1</li>
-          <li className="p-8 h-52 flex-1 border-white border-8 border-t-0 rounded-b-[4rem]">Menu2</li>
-          <li className="p-8 h-52 flex-1 border-white border-8 border-t-0 rounded-b-[4rem]">Menu3</li>
-        </ul>
-      </section>
+      <HomeMenu 
+        data={[
+          { imageUrl: Menu1, name: "Mie Bistik" },
+          { imageUrl: Menu2, name: "Dimsum Mentai" },
+          { imageUrl: Menu3, name: "Chilli Oil" },
+          { imageUrl: Menu4, name: "Ekado Goreng" },
+          { imageUrl: Menu5, name: "Lumpia Goreng" },
+          { imageUrl: Menu6, name: "Kuotie Goreng" },
+        ]}
+      />
     </>
   )
 }
