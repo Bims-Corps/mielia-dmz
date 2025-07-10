@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { HeaderBrandImage } from './HeaderBrandImage'
-import ListImage from "../../assets/logos/list.svg";
+import { BsList } from 'react-icons/bs';
+import { Button } from '../Buttons/Button';
 
 export const HeaderComponent = () => {
   return (
@@ -8,9 +9,12 @@ export const HeaderComponent = () => {
       <Link to={"/"}>
         <HeaderBrandImage />
       </Link>
-      <button>
-        <img src={ListImage} width={50} alt="list" draggable={false} />
-      </button>
+      <Button 
+        variant='ghost' 
+        color='primary' 
+        className='!text-3xl' 
+        children={<BsList />} 
+      />
     </header>
   )
 }

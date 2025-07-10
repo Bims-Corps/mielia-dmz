@@ -17,8 +17,8 @@ export const buttonStyle = "transition-all duration-300 cursor-pointer";
 export const buttonColorMap = {
     primary: {
         filled: "bg-secondary-500 text-primary-500 hover:bg-secondary-100",
-        outline: "border border-blue-600 text-blue-600 hover:bg-blue-50",
-        ghost: "text-blue-600 hover:bg-blue-50",
+        outline: "border border-secondary-500 text-secondary-500 hover:bg-secondary-100",
+        ghost: "text-secondary-500 hover:bg-secondary-100 hover:text-primary-500",
     },
     secondary: {
         filled: "bg-gray-600 text-white hover:bg-gray-700",
