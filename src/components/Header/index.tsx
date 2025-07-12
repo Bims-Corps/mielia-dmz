@@ -5,16 +5,18 @@ import { Button } from '../Buttons/Button';
 
 export const HeaderComponent = () => {
   return (
-    <header className="flex gap-4 items-center justify-between p-4">
-      <Link to={"/"}>
-        <HeaderBrandImage />
-      </Link>
-      <Button 
-        variant='ghost' 
-        color='primary' 
-        className='!text-3xl' 
-        children={<BsList />} 
-      />
-    </header>
+    <section className='container mx-auto'>
+      <header className="flex gap-4 items-center justify-between p-4">
+        <Link to={"/"}>
+          <HeaderBrandImage />
+        </Link>
+        <Button 
+          variant='ghost' 
+          color='primary' 
+          className='!text-3xl' 
+          children={<BsList />} 
+        />
+      </header>
+    </section>
   )
 }
