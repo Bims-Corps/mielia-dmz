@@ -33,8 +33,8 @@ export const Sidebar: React.FC<SidebarProps> = (props) => {
           <ul className='flex flex-col text-center'>
             <SideLink text='Home' link='/' isActive={true} />
             <SideLink text='About Us' link='/about' />
-            <SideLink text='Menu' link='/menu' />
-            <SideLink text='Blog' link='/blog' />
+            <SideLink text='Menu' link='/menus' />
+            <SideLink text='Blog' link='/blogs' />
           </ul>
           <div className='absolute top-0 end-0 h-full w-2 rounded-s-4xl bg-primary-500'></div>
         </div>
