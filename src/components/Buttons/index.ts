@@ -21,7 +21,7 @@ export const buttonColorMap = {
         ghost: "text-secondary-500 hover:bg-secondary-100 hover:text-primary-500",
     },
     secondary: {
-        filled: "bg-gray-600 text-white hover:bg-gray-700",
+        filled: "bg-primary-500 text-secondary-500 hover:bg-primary-700",
         outline: "border border-gray-600 text-gray-600 hover:bg-gray-50",
         ghost: "text-secondary-500 hover:bg-gray-50 hover:text-primary-500",
   },
