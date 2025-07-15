@@ -22,6 +22,7 @@ export default function HomeScreen() {
           { imageUrl: Menu6, name: "Kuotie Goreng" },
         ]}
       />
+      <div className="h-12 my-4">&nbsp;</div>
     </>
   )
 }
