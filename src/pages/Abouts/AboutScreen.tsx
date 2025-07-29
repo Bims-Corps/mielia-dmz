@@ -5,7 +5,7 @@ export default function AboutScreen() {
   return (
      <>
       <section className="container mx-auto py-4">
-        <h1 className="text-center font-bold italic leading-1">
+        <h1 className="text-center font-bold italic leading-1 animate__animated animate__fadeInDown">
           <span className="text-7xl">ABOUT</span> <br />
           <span className="text-8xl">US</span>
         </h1>

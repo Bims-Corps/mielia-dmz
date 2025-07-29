@@ -17,7 +17,7 @@ interface TitleProps {
 const Title: React.FC<TitleProps> = (props) => {
   const {title, content} = props;
   return (
-    <div className="col-span-4 text-center">
+    <div className="col-span-4 text-center animate__animated animate__fadeInUp animate__delay-1s">
       <h3 className="text-3xl font-bold italic mb-4">{title}</h3>
       <p className="text-start">{content}</p>
     </div>
