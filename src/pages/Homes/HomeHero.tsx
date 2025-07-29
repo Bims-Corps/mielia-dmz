@@ -12,10 +12,10 @@ export const HomeHero = () => {
           <section className='grid grid-cols-5 items-center relative z-20'>
             <div className='col-span-2'>
               <div className='flex flex-col text-end py-8 text-primary-500'>
-                <h2 className='font-extrabold italic text-5xl'>RASA AUTHENTIKNYA</h2>
-                <h5 className='text-xl'>Bikin Melayang!</h5>
+                <h2 className='font-extrabold italic text-5xl animate__animated animate__fadeInUp'>RASA AUTHENTIKNYA</h2>
+                <h5 className='text-xl animate__animated animate__fadeInUp'>Bikin Melayang!</h5>
               </div>
-              <div className='flex gap-4 flex-wrap'>
+              <div className='flex gap-4 flex-wrap animate__animated animate__fadeIn'>
                 <Button 
                   color="secondary" 
                   size="lg" 

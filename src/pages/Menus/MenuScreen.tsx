@@ -43,12 +43,12 @@ export default function MenuScreen() {
   return (
     <>
       <section className="container mx-auto px-8 text-center relative z-10">
-        <h1 className="text-center font-bold italic mb-4">
+        <h1 className="text-center font-bold italic mb-4 animate__animated animate__fadeInDown">
           <span className="text-8xl">OUR</span><br />
           <span className="text-6xl">MENU</span>
         </h1>
         <div className="w-2/4 mx-auto p-4">
-          <p className="text-sm">Lapar? Tenang. Di sini ada mie yang kenyalnya bikin lupa mantan, dan dimsum yang lumer kayak janji-janji indah. Yuk, pilih menu yang paling cocok buat mood kamu hari ini!</p>
+          <p className="text-sm animate__animated animate__fadeIn">Lapar? Tenang. Di sini ada mie yang kenyalnya bikin lupa mantan, dan dimsum yang lumer kayak janji-janji indah. Yuk, pilih menu yang paling cocok buat mood kamu hari ini!</p>
           <ul className="flex gap-4 justify-center items-end border-b-4 my-8">
             <TabItem 
               isActive={tab == "mie"}

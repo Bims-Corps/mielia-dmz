@@ -8,7 +8,7 @@ export const HomeMenu: FC<{data: MenuItemProps[]}> = (props) => {
   return (
     <div className="container mx-auto">
       <section className="py-4 text-center w-full mx-auto">
-        <h4 className="text-2xl text-secondary-500 font-bold italic mb-4">PESEN JUGA MENU TERBARU KITA YUK!</h4>
+        <h4 className="text-2xl text-secondary-500 font-bold italic mb-4 animate__animated animate__fadeInDown">PESEN JUGA MENU TERBARU KITA YUK!</h4>
         <div className="my-2">&nbsp;</div>
         <ul className="flex gap-4 items-center justify-center border-t-[.75rem] border-t-white px-12">
           { 
