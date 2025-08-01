@@ -17,7 +17,7 @@ export const HeaderComponent = () => {
 
   return   (
     <>
-      <section className='container mx-auto'>
+      <section className='container mx-auto relative z-10'>
         <header className="flex gap-4 items-center justify-between p-4">
           <Link to={"/"}>
             <HeaderBrandImage />
