@@ -10,7 +10,7 @@ export const HomeMenu: FC<{data: MenuItemProps[]}> = (props) => {
       <section className="py-4 text-center w-full mx-auto">
         <h4 className="text-2xl text-secondary-500 font-bold italic mb-4 animate__animated animate__fadeInDown">PESEN JUGA MENU TERBARU KITA YUK!</h4>
         <div className="my-2">&nbsp;</div>
-        <ul className="flex gap-4 items-center justify-center border-t-[.75rem] border-t-white px-12">
+        <ul className="flex gap-2 items-center justify-center border-t-[.75rem] border-t-white px-14">
           { 
             data.map((item, index) => (
               <MenuItem imageUrl={item.imageUrl} name={item.name} key={index} />
@@ -31,7 +31,7 @@ const MenuItem: FC<MenuItemProps> = (props) => {
   const { imageUrl, name } = props;
   return (
     <>
-      <li className="min-h-32 flex-1 max-w-52 border-white border-8 border-t-0 rounded-b-[4rem] flex justify-center items-center">
+      <li className="min-h-32 flex-1 max-w-52 border-white border-8 border-t-0 rounded-b-[8rem] flex justify-center items-center">
         <div 
           className={clsx(
             "group transition-all duration-300 relative",

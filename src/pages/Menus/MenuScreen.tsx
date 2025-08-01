@@ -2,29 +2,111 @@ import { useEffect, useState, type ReactNode } from "react";
 import { DimsumIcon, DrinkIcon, MieIcon } from "../../components/Icons";
 import clsx from "clsx";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import MenuMie from "../../assets/images/menus/_menu_mie.png";
-import MenuTeh from "../../assets/images/menus/_menu_teh.png";
-import MenuKuetie from "../../assets/images/menus/_menu_kuotie.png";
 import Person from "../../assets/images/_half_person_menu.png";
+import Dimsum1 from "../../assets/images/menus/ekado_goreng.png";
+import Dimsum2 from "../../assets/images/menus/display_hakao.png";
+import Dimsum3 from "../../assets/images/menus/display_kuotie.png";
+import Dimsum4 from "../../assets/images/menus/display_lumpia_udang.png";
+import Dimsum5 from "../../assets/images/menus/display_pangsit_ayam.png";
+import Dimsum6 from "../../assets/images/menus/display_siomay_moza.png";
+import Dimsum7 from "../../assets/images/menus/display_dm_mentai.png";
+import Mie1 from "../../assets/images/menus/display_mie_manis1.png";
+import Mie2 from "../../assets/images/menus/display_mie_asin1.png";
+import Mie3 from "../../assets/images/menus/display_mie_mistik.png";
+import Drink1 from "../../assets/images/menus/display_lemon_mojito.png";
+import Drink2 from "../../assets/images/menus/display_orange_mojito.png";
+import Drink3 from "../../assets/images/menus/display_orange_squash.png";
 
 const Menu = [
   {
     type: "mie",
-    name: "Mie Manis Level 1",
-    price: "Rp 10.000,-",
-    image: MenuMie
+    name: "Mie Manis (Level 0-5)",
+    price: "Rp 10.500,-",
+    image: Mie1
+  },
+  {
+    type: "mie",
+    name: "Mie Manis (Level 6-10)",
+    price: "Rp 13.000,-",
+    image: Mie1
+  },
+  {
+    type: "mie",
+    name: "Mie Asin (Level 0-5)",
+    price: "Rp 10.500,-",
+    image: Mie2
+  },
+  {
+    type: "mie",
+    name: "Mie Asin (Level 6-10)",
+    price: "Rp 10.500,-",
+    image: Mie2
+  },
+  {
+    type: "mie",
+    name: "Mie Bistik (Level 1-5)",
+    price: "Rp 25.000,-",
+    image: Mie3
   },
   {
     type: "dimsum",
-    name: "Kuetie Goreng",
-    price: "Rp 10.000,-",
-    image: MenuKuetie
+    name: "Ekado",
+    price: "Rp 10.500,-",
+    image: Dimsum1  
+  },
+  {
+    type: "dimsum",
+    name: "Hakao",
+    price: "Rp 12.500,-",
+    image: Dimsum2  
+  },
+  {
+    type: "dimsum",
+    name: "Kuotie",
+    price: "Rp 10.500,-",
+    image: Dimsum3  
+  },
+  {
+    type: "dimsum",
+    name: "Lumpia Udang",
+    price: "Rp 10.500,-",
+    image: Dimsum4  
+  },
+  {
+    type: "dimsum",
+    name: "Pangsit Ayam",
+    price: "Rp 10.500,-",
+    image: Dimsum5  
+  },
+  {
+    type: "dimsum",
+    name: "Siomay Mozarella",
+    price: "Rp 10.500,-",
+    image: Dimsum6  
+  },
+  {
+    type: "dimsum",
+    name: "Dimsum Mentai",
+    price: "Rp 14.000,-",
+    image: Dimsum7  
   },
   {
     type: "drink",
-    name: "Teh Manis",
-    price: "Rp 5.000,-",
-    image: MenuTeh
+    name: "Lemon Mojito",
+    price: "Rp 6.500,-",
+    image: Drink1
+  },
+  {
+    type: "drink",
+    name: "Orange Mojito",
+    price: "Rp 6.500,-",
+    image: Drink2
+  },
+  {
+    type: "drink",
+    name: "Orange Squash",
+    price: "Rp 6.500,-",
+    image: Drink3
   }
 ]
 
@@ -78,7 +160,7 @@ export default function MenuScreen() {
           <div className="flex gap-4 justify-between items-center w-full py-8">
             <button 
               type="button" 
-              className="cursor-pointer"
+              className="cursor-pointer p-4 transition duration-300 hover:bg-white hover:text-primary-500 rounded-4xl"
               onClick={() => {
                 setId(id == 0 ? Menu.length - 1 : id - 1);
               }}
@@ -92,7 +174,7 @@ export default function MenuScreen() {
             />
             <button 
               type="button" 
-              className="cursor-pointer"
+              className="cursor-pointer p-4 transition duration-300 hover:bg-white hover:text-primary-500 rounded-4xl"
               onClick={() => {
                 setId(id + 1 == Menu.length ? 0 : id + 1);
               }}
