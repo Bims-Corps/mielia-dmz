@@ -41,13 +41,13 @@ export const Sidebar: React.FC<SidebarProps> = (props) => {
         <div className='flex-1'></div>
         <footer className='text-center'>
           <div className='py-4 flex flex-wrap gap-2 justify-center items-center'>
-            <Link to="" target='_blank' 
+            <Link to="https://www.instagram.com/mielia_cimahi/" target='_blank' 
               children={<img src={Insta} width={40} draggable={false} />}
             />
-            <Link to="" target='_blank' 
+            <Link to="https://wa.me/6281222606805" target='_blank' 
               children={<img src={Phone} width={40} draggable={false} />}
             />
-            <Link to="" target='_blank' 
+            <Link to="https://maps.app.goo.gl/Es7YcLipfyrLiKj58" target='_blank' 
               children={<img src={Location} width={40} draggable={false} />}
             />
           </div>
